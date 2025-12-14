@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Rivera - Portafolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="./img/assets/logo-sr.jpg" alt="SR Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hola, soy</p>
+                <h1 class="name">Santiago Rivera</h1>
+                <p class="title">Desarrollador Full Stack | Apasionado por la tecnología</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Contáctame</a>
+                    <a href="#proyectos" class="btn btn-secondary">Ver Proyectos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./img/assets/foto-perfil.png" alt="Santiago Rivera">
+            </div>
+        </div>
+        <div class="logo-watermark">
+            <img src="./img/assets/logo-sr.jpg" alt="Logo SR">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="section-container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-info">
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <span class="label">Nombre</span>
+                            <span class="value">Santiago Rivera</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span class="label">Teléfono</span>
+                            <span class="value">+593 995 303 033</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="label">Email</span>
+                            <span class="value">santiagodeveloperfullstack@outlook.com</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="label">Ubicación</span>
+                            <span class="value">Ecuador</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Soy un desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras.
+                    Me especializo en el desarrollo de aplicaciones web modernas y escalables,
+                    siempre buscando aprender nuevas tecnologías y mejorar mis habilidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="skills">
+        <div class="section-container">
+            <h2 class="section-title">Habilidades</h2>
+
+            <div class="skills-category">
+                <h3>Usando Ahora</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Aprendiendo</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Otras Habilidades</h3>
+                <div class="other-skills">
+                    <span class="skill-tag">Trabajo en equipo</span>
+                    <span class="skill-tag">Comunicación</span>
+                    <span class="skill-tag">Resolución de problemas</span>
+                    <span class="skill-tag">Aprendizaje rápido</span>
+                    <span class="skill-tag">Metodologías ágiles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="proyectos" class="portfolio">
+        <div class="section-container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h3>Proyecto 1</h3>
+                        <p>Descripción del proyecto</p>
+                        <a href="#" class="btn btn-small">Ver más</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción del proyecto</p>
+                        <a href="#" class="btn btn-small">Ver más</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h3>Proyecto 3</h3>
+                        <p>Descripción del proyecto</p>
+                        <a href="#" class="btn btn-small">Ver más</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h3>Proyecto 4</h3>
+                        <p>Descripción del proyecto</p>
+                        <a href="#" class="btn btn-small">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="contact-text">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name" class="sr-only">Nombre</label>
+                    <input type="text" id="name" name="from_name" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" name="from_email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="sr-only">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Enviar Mensaje</button>
+            </form>
+            <div id="form-status" class="form-status"></div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Sígueme</p>
+            <div class="social-links">
+                <a href="https://github.com/Santiago-Rivera" target="_blank" rel="noopener" title="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/santiago-rivera-rivera-6090235b" target="_blank" rel="noopener" title="LinkedIn">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <a href="mailto:santiagodeveloperfullstack@outlook.com" title="Enviar email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="copyright">2025-2026 &copy; Santiago Rivera. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menú móvil toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const menuIcon = menuToggle.querySelector('i');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            // Cambiar ícono entre hamburguesa y X
+            if (navLinks.classList.contains('active')) {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Cerrar menú al hacer clic fuera
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        // ============================================
+        // EmailJS - Configuración y envío de formulario
+        // ============================================
+
+        // Inicializar EmailJS con tu Public Key
+        // IMPORTANTE: Debes reemplazar 'TU_PUBLIC_KEY' con tu clave pública de EmailJS
+        emailjs.init('z02VOE5ShRTRdf0-7');
+
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Cambiar estado del botón mientras se envía
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+
+            // Parámetros del email
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                to_email: 'santiagodeveloperfullstack@outlook.com'
+            };
+
+            // Enviar email usando EmailJS
+            // IMPORTANTE: Reemplaza 'TU_SERVICE_ID' y 'TU_TEMPLATE_ID' con tus IDs de EmailJS
+            emailjs.send('service_hmy8sgj', 'template_ww14wjk', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    formStatus.innerHTML = '<p class="success-message"><i class="fas fa-check-circle"></i> ¡Mensaje enviado correctamente! Te responderé pronto.</p>';
+                    contactForm.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Enviar Mensaje';
+
+                    // Ocultar mensaje después de 5 segundos
+                    setTimeout(() => {
+                        formStatus.innerHTML = '';
+                    }, 5000);
+                })
+                .catch(function(error) {
+                    console.log('FAILED...', error);
+                    formStatus.innerHTML = '<p class="error-message"><i class="fas fa-exclamation-circle"></i> Error al enviar el mensaje. Por favor, intenta de nuevo.</p>';
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Enviar Mensaje';
+                });
+        });
+    </script>
+</body>
+</html>
